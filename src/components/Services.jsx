@@ -1,5 +1,6 @@
 import assets from "../assets/assets";
 import ServiceCard from "./serviceCard";
+
 import Title from "./Title";
 
 const Services = () => {
@@ -45,7 +46,7 @@ const Services = () => {
       />
       <div className="flex flex-col md:grid grid-cols-2">
         {ServicesData.map((service, index) => (
-          <ServiceCard key={index} service={service} index={index} />
+          <ServiceCard key={index} service={service} />
         ))}
       </div>
     </div>
